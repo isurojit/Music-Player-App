@@ -1,0 +1,674 @@
+/* Applying For Entire Webpage */
+    html
+    body{   
+        background-color: #ffffff;
+    }
+
+/* For Box Shadow */
+    :root{
+        --box-shadow: 0px 0px 16px -5px rgba(0,0,0,0.75);
+    }
+
+/* Header Section Menu */
+    .menu-header{
+        width: 100%;
+        position: fixed;
+        background-color:white;
+        height: 120px;
+        z-index: 1;
+    }
+
+/* Searchbar Form */
+    .search-bar{
+        border: 0;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        position: relative;
+        z-index: 1;
+        background: none;
+        outline: none;
+    }
+    .search-bar:hover{
+        border-bottom: 3px solid rgb(8, 0, 128);
+    }
+
+/* Notification Bell */
+    .fa-bell{
+        color: rgb(0, 0, 0);
+        font-size: x-large;
+        position: relative;
+        top: 12px;
+    }
+    .fa-bell:hover{
+        color: blue;
+        transform: translateY(-3px);
+        transition: all .2s ease-in-out;
+    }
+    .fa-circle{
+        color: rgb(194, 0, 0);
+        width: 8px;
+        height: 8px;
+        position: relative;
+        left: 60px;
+        top: -30px;
+    }
+
+/* User Logo Section */
+    .user-logo a img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .logo-name{
+        font-size: 2rem
+    }
+
+    /* Starting Of Main Section */
+    main{
+        width: 70%;
+        margin: 10% 0% 0% 4%;
+        display: inline-block;
+    }
+
+/* Slider Section */
+
+/* Play Pause Button */
+    .play-pause{
+        position: absolute;
+    }
+
+
+    .play-button{
+        margin: 65px 0px 0px;
+        transform: translateX(65px);
+    }
+
+/* Latest Release Section */
+    #latest-release{
+        margin: 40px 0px;
+    }
+    input, button { 
+        border:none; 
+        background-color: transparent;
+    } 
+/* Scaling Album Images */
+    .latest-release-images{
+        width: 140px;
+        height: 140px;
+
+    }
+    .latest-release-row{
+        margin-bottom: 5px;
+    }
+    .latest-release-title{
+        margin: 35px 0px;
+        text-decoration: underline;
+    }
+    .latest-release-albums{
+        display: flex;
+    }
+    .latest-release-albums a img{
+    margin-bottom: 10px;
+    }
+    .latest-release-albums h5{
+        flex-grow: 1;
+        align-self: center;
+        padding-left:15px ;
+    }
+    .latest-release-albums.dropdown{
+        flex-grow: 8;
+        margin-left: 25px;
+    }
+    .secondary-tiitle{
+        font-size: medium;
+        opacity: .5;
+    }
+    .hvr-sweep-to-right:hover{
+        background-color: black;
+    }
+    .dropdown-menu{
+        border-radius: 13px;
+    }
+
+
+/* Popular artist section */
+    .popular-artist-image a img{
+        width: 140px;
+        height: 140px;
+        border-radius: 75px;
+        padding: 5%;
+        box-shadow: var(--box-shadow);
+        margin-left: -15px;
+    }
+    .popular-artist-image h6{
+        text-align: center;
+        position: relative;
+        right: 10px;
+        line-height: 2;
+    }
+
+/* Radio Section */
+    .radio-section{
+        box-shadow: var(--box-shadow);
+        border-radius: 25px;
+        margin-top: 50px;
+        width: 100%;
+        padding: 1%;
+    }
+    .radio-icon a img{
+        width: 130px;
+        height: 130px;
+        border-radius: 65px;
+        box-shadow: var(--box-shadow);
+    }
+    .radio-section-image a img{
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin-top: 5px;
+        
+    }
+
+
+/* Song Gener Section */
+    .gener-section{
+        margin: 35px 0px;
+        position: relative;
+        right: 1.5rem;
+    }
+
+    .gener-section-image{
+        position: relative;
+        overflow: hidden;
+        min-width: 270px;
+        max-width: 335px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .gener-section-image img{
+        width: 280px;
+        height: 150px;
+        opacity: .9;
+        /* height: 100%; */
+        position: absolute;
+        right: 0;
+        -webkit-transition: all 1.5s ease-out;
+        transition: all 1.5s ease-out;
+    }
+
+    .gener-section-image:hover img,
+    .gener-section-image.hover img{
+        transform: scale(1.1);
+        
+    }
+    .gener-section-text a{
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+
+
+/* Latest English , Hindi & Trendinf Song Section */
+    .latest-english-image a img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .latest-english-image h6{
+        position: relative;
+        top: 8px;
+    }
+    .latest-english-image p{
+        position: relative;
+        top: -2px;
+        font-size: small;
+        opacity: .5;
+    }
+
+
+
+/* Aside Section */
+aside{
+    display: inline-block;
+    margin: 10% 0% 0% 2%;
+    width: 24%;
+    vertical-align: top;
+    position: fixed;
+}
+
+.aside-header-section{
+    margin-bottom: 25px;
+    padding: 2%;
+}
+.aside-head{
+    display: inline-block;
+    margin-left: 25px;
+}
+.dropdown.aside-head{
+    margin-left: 90px;
+    position: relative;
+}
+
+
+/* Song list */
+
+.song-list-container{
+    right: -22px; /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+    background: transparent;
+    height: 65vh;
+    
+}
+.song-list-container::-webkit-scrollbar{
+    display: none;
+}
+.song-list{
+   overflow: hidden;
+}
+
+.song-list-perticular{
+    display: flex;
+    
+}
+.song-list-perticular p{
+    font-weight: 600;
+    margin-right: 15px;
+    position: relative;
+    top: 10px;
+    left: 8px;
+   
+}
+.song-list-perticular img{
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    position: relative;
+    left: 10px;
+    
+    
+}
+.song-list-perticular a{
+    text-decoration: none;
+    color: black;
+}
+.song-list-perticular a p{
+    font-size: smaller;
+    opacity: .6;
+    position: relative;
+    transform: translateX(-8px) translateY(-10px);
+}
+.song-list-perticular a h6{
+    margin-left: 25px;
+    margin-right: 130px;
+}
+
+/* Music Player Menu Footer */
+#footer{
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    display: none;
+}
+.footer-nav-bar{
+    display: inline-block;
+}
+.footer-navigation img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+}
+@keyframes  rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+.footer-navigation img{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.footer-navigation h4{
+    margin: 5px 5px;
+    font-size: large;
+    position: relative;
+    top: 15px;
+}
+.footer-navigation h4 p{
+    font-size: smaller;
+}
+.footer-navigation-heart{
+    margin-right:20px;
+    position: relative;
+}
+.footer-navigation-controls{
+    font-size: small;
+    position: relative;
+    left: 300px;
+}
+
+.play-circle-footer{
+    font-size: 44px;
+    opacity: 4 !important;
+}
+.range-first input{
+    width: 270% !important; 
+    margin-left: 10px;
+    position: relative;
+    top: 35px;
+    
+}
+.nav-bar-controls-end{
+    position: relative;
+    left: 400px;
+    font-size: small;
+}
+.space-maker{
+    margin-left: 20px;
+}
+.fa-expand-alt{
+    margin-left: 15px;
+}
+.range-second{
+    position: relative;
+    top: 3px;
+}
+
+
+/* Cold Play Page */
+
+/* Bio Section */
+.top-head-container{
+    width:100%;
+    height: 340px;
+}
+.cold-play-sub-info{
+    position: relative;
+    bottom: 3%;
+}
+
+.top-head-image img{
+    position: relative;
+    width: 320px;
+    height: 340px;
+    right: 15px;
+    opacity: .9;
+}
+.coldpay-flo-count{
+    position: relative;
+    left: 380px;
+}
+.coldplay-sub{
+    margin-bottom:15px;
+}
+#top-head{
+    position: relative;
+    background: linear-gradient(180deg,rgb(0, 0, 0),#757474);
+    color: white;
+}
+.coldplay-btn{
+    width: 30%;
+    margin: 15px 0px;
+}
+.coldplay-fol a{
+    position: relative;
+    left: 85px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Song List Table */
+#song-list{
+    margin-top: 15px;
+
+}
+.song-list-table{
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.song-list-main-coldplay{
+    display: flex;
+    flex-direction: row;
+}
+
+.song-list-single a{
+    color: black;
+    text-decoration: none;
+}
+.song-list-single a p{
+    position: relative;
+    top: 14px;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.song-list-single a img{
+    width: 23%;
+    height: 80%;
+    border-radius: 8px;
+    position: relative;
+    top: 5px;
+    flex-grow: 1;
+    margin: 0% 10%;
+}
+.song-list-single a h6{
+    margin-left: -170%;
+    position: relative;
+    top: 6px;
+    flex-grow: 1;
+}
+.song-list-single a h6 p{
+    opacity: .5;
+    font-size: smaller;
+    position: relative;
+    margin-left: -1%;
+    transform: translateY(-12px);
+}
+.heart-img{
+    padding: 0px 40px 0px 620px;
+    position: relative;
+    top: 10px;    
+}
+.plus-img{
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+/* Aside Section */
+
+.similar-artist-sub{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.similar-artist-sub-a{
+    margin-left: 80px;
+    text-decoration: none;
+    color: black;
+}
+.similar-artist-img{
+    width: 60px;
+    height: 60px;
+}
+.similar-artist-heading{
+    width: 170px;
+}
+
+.latest-release-row-second{
+    margin-left: -15px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    /* Navigation section */
+    .fav-header{
+        position: relative;
+        right: 2rem;
+    }
+    #search-icon{
+        position: relative;
+        top: 25px;
+    }
+    #micro-icon{
+        position: relative;
+        left: 13.2rem;
+        bottom: 1.5rem;
+    }
+    .bell-icon{
+        position: relative;
+        right: 1rem;
+    }
+    .user-logo{
+        position: relative;
+        right: 3rem;
+    }
+
+/* Aside Section */
+    aside{
+        display: none;
+    }
+
+/* Main Section */
+    main{
+        width: 90%;
+    }
+
+/* Footer Section Of music player control */
+#footer{
+    height: 11vh;
+}
+.footer-navigation-controls{
+    left: 30px;
+}
+.space-maker{
+    margin-left: 10px;
+}
+.nav-bar-controls-end{
+    bottom: 40px;
+    transform: translateX(90px);
+}
+.fa-mobile-alt{
+    display: none;
+}
+.range-first input{
+    width: 220% !important; 
+    position: relative;
+    top: 45px;
+    right: 200px;
+}
+/* Artist bio Section */
+    .top-head-container{
+        width:100%;
+        height: 380px;
+    }
+    .coldplay-para{
+        width: 75%;
+    }
+    .top-head-content{
+        font-size: small;
+        position: relative;
+        bottom: -25px;
+        right: -80px;
+    }
+    .top-head-image img{
+        position: relative;
+        width: 300px;
+        height: 343px;
+        bottom: -15px;
+        right: 16px;
+        opacity: .9;
+    }
+    .coldpay-flo-count{
+        position: relative;
+        left: 180px;
+    }
+   
+    .top-head-container{
+        position: relative;
+        top: 20px;
+    }
+
+/* Song List */
+
+    #song-list{
+        margin-top: 15px;
+    
+    }
+    .song-list-table{
+        box-shadow: var(--box-shadow);
+        border-radius: 15px;
+        margin-bottom: 5px;
+    }
+    .song-list-main-coldplay{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .song-list-single a{
+        color: black;
+        text-decoration: none;
+    }
+    .song-list-single a p{
+        position: relative;
+        top: 14px;
+        margin-left: 8px;
+        
+    }
+    .song-list-single a img{
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        position: relative;
+        top: 3px;
+        left: 10px;
+       
+    }
+    .song-list-single a h6{
+        margin-left: -100%;
+        position: relative;
+        top: 6px;
+        left: 90px;
+       
+    }
+    .heart-img{
+        position: relative;
+        right: 130px ;    
+    }
+    .plus-img{
+        position: relative;
+        right: 140px;
+    }
+    
+}
+
+/* For mobile Device */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    main,aside,header,footer{
+        display: none;
+    }
+    .mobile-img{
+        background-image: url(mobile-background.png);
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

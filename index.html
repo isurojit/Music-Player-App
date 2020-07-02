@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music App</title>
+    
+    <!-- Bootsrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- End Of Bootsrap Css Link -->
+
+    <!-- Linking Style Css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Css Hover Function -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+    
+    
+
+    <!-- Header Section -->
+    <header class="menu-header">
+
+        <!-- Header Section Using Bootstrap Nav -->
+        <nav class="navbar navbar-expand-md navbar-light navigation-menu" style="background-color: rgba(255, 255, 255, 0)">
+
+
+            <!-- Header Name & Logo Menu -->
+
+            <a class="navbar-brand logo-name" href="index.html"><img src="https://images-eu.ssl-images-amazon.com/images/I/51a1NKExrxL.png" width="100" height="100" alt="" loading="lazy">
+            Music Box
+            </a>         
+            <button class="navbar-toggler navbar-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Header Name & Logo Section Ended -->
+            
+
+            <!-- Collapable Menu Options -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+
+            <!-- Left Side Menu -->
+
+                <ul class="navbar-nav mr-auto pl-4">
+                    <h6 class="nav-item active">
+                        <a class="nav-link fav-header" href="#">Favorites</a>
+                    </h6>
+                </ul>
+
+            <!-- End Of Left Side Menu -->
+            
+            <!-- Right Side Menu -->
+
+                <div class="my-lg-8">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <!-- Search Form -->
+
+                        <form class="form-inline">
+                            <i class="fas fa-search" id="search-icon"></i>
+                            <input class="pl-4 pr-4 search-bar" type="search" placeholder="Search"
+                              aria-label="Search">
+                            <i class="fas fa-microphone" id="micro-icon"></i>
+                        </form>
+
+                        <!-- Notification Icon -->
+                        <li class="nav-item bell-icon">
+                           
+                            <a class="nav-link pl-5" href="#"><i class="fas fa-bell"></i></a>
+                            <i class="fas fa-circle"></i>
+                        </li>
+
+                        <!-- User Logo -->
+                        <li class="nav-item user-logo">
+                            <a class="nav-link pl-5 pr-5" href="#"><img src="https://cdn.imgbin.com/8/12/22/imgbin-holstein-friesian-cattle-headphones-illustration-wearing-headphones-cute-cartoon-animals-material-dtA4KYNpSL7kMfhVYJyrakGuw.jpg" alt="User Icon"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            <!-- End Of Right Side Menu -->
+
+            </div>
+            <!-- End of Collapable Menu -->
+
+        </nav>
+        <!-- End Of Navigation Menu -->
+        
+    </header>
+   <!-- End Of Header -->
+   
+   <!-- For Mobile Responsive Backgound -->
+   <div class="mobile-img"></div>
+
+   <!-- Starting of main section -->
+   <main>
+
+        <!-- Slider Section Using Bootstrap -->
+        <section id="main-slider">
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="slider1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="slider2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="slider3.png" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- End Of Slider Section -->
+
+        <!-- Latest Release Section -->
+        <section id="latest-release">
+            <div class="latest-release-title">
+                <h4>Latest Release</h4>
+            </div>
+
+            <!-- List Using Bootstrap Grid Sytem -->
+            <div class="container">
+
+                <!-- First Row -->
+                <div class="row latest-release-row">
+                    <div class="col-sm-12 col-md-6 latest-release-albums">
+                        <div>
+                            <a href="#" class="play-pause">
+                                <a href="#" title="Play video" class="play"></a>
+                            </a>
+                            <button onclick="myFunction()">
+                                <a href="#footer"><img class="latest-release-images" src="https://snoidcdnems06.cdnsrv.jio.com/c.saavncdn.com/346/Stay-Gold-Japanese-2020-20200618090201-500x500.jpg" alt="Map of the soul"></a>
+                            </button>
+                        </div>
+                        <h5>Stay Gold <br><p class="secondary-tiitle">BTS <br>2020</p></h5>
+
+                        <!-- List Navigation  -->
+                        <div class="dropleft">
+                            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <br>4:58
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                            </div>
+                        </div>
+                        <!-- End Of List Navigation -->
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 latest-release-albums">
+                        <button onclick="myFunction()">
+                            <a href="#footer"><img class="latest-release-images" src="https://c.saavncdn.com/135/TRANSLATION-English-2020-20200622215528-500x500.jpg" alt="Translation"></a>
+                        </button>
+                        <h5>Translation <br><p class="secondary-tiitle">Black Eyed Peas <br>2020</p></h5>
+                    
+                        <!-- List Navigation -->
+                        <div class="dropleft">
+                            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <br>3:28
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                            </div>
+                        </div>
+                        <!-- End Of List Navigation -->
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="row latest-release-row">
+                    <div class="col-sm-12 col-md-6 latest-release-albums">
+                        <button onclick="myFunction()">
+                            <a href="#footer"><img class="latest-release-images" src="https://c.saavncdn.com/095/Chromatica-English-2020-20200529000826-500x500.jpg" alt="Chromatica"></a>
+                        </button>
+                        <h5>Chromatica <br><p class="secondary-tiitle">Lady Gaga <br>2020</p></h5>
+                        <!-- List Navigation -->
+                        <div class="dropleft">
+                            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <br>4:32
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                            </div>
+                        </div>
+                        <!-- End Of List Navigation -->
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 latest-release-albums">
+                        <button onclick="myFunction()">
+                            <a href="#footer"><img class="latest-release-images" src="https://c.saavncdn.com/307/Stuck-with-U-English-2020-20200508041707-500x500.jpg" alt="Stuck with you"></a>
+                        </button>
+                        <h5>Stuck with U <br><p class="secondary-tiitle">Ariana Grande, Jus.. <br>2020</p></h5>
+                        
+                        <!-- List Navigation -->
+                        <div class="dropleft">
+                            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <br>3:51
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                            </div>
+                        </div>
+                        <!-- End Of List Navigation -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Latest Release Section -->
+
+
+        <!-- Popular Artist Section Using Bootstrap Grid System -->
+        <section class="popular-artist">
+            <div class="latest-release-title">
+                <h4>Popular Artists</h4>
+            </div>
+
+            <!--Starting Of Main Container -->
+            <div class="container">
+
+                <!-- Every Row Consists Of Image & Artist Name Which Aligned In Bootstrap Grid System -->
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-2 col-lg-2 popular-artist-image">
+                        <a href="coldplay.html" target="_blank"><img src="https://bookingagentinfo.com/wp-content/uploads/2013/10/Coldplay-Contact-Information.jpg" alt="Cold Play"></a>
+                        <h6>Cold Play</h6>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2 popular-artist-image">
+                        <a href="edsheeran.html" target="_blank"><img src="https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/methode/2019/04/13/d184143e-5ce2-11e9-bbcc-84176f6dd1e7_image_hires_102022.JPG?itok=w-eiG2qs&v=1555122028" alt="Ed Sheeran"></a>
+                        <h6>Ed Sheeran</h6>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2 popular-artist-image">
+                        <a href="taylorswift.html" target="_blank"><img src="https://cdn.vox-cdn.com/thumbor/sKobvhE31vUDeQrW_WNKH0MKQUo=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19378373/1164343509.jpg.jpg" alt="Taylor Swift"></a>
+                        <h6>Taylor Swift</h6>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2 popular-artist-image">
+                        <a href="sia.html" target="_blank"><img src="https://media.allure.com/photos/5a2ff4afdd0c5b5b96b21692/1:1/w_2221,h_2221,c_limit/GettyImages-884266074.jpg" alt="Sia"></a>
+                        <h6>Sia</h6>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2 popular-artist-image">
+                        <a href="adele.html" target="_blank"><img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F593ae2e54bbe6f1b730b6446%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D568%26cropX2%3D1641%26cropY1%3D189%26cropY2%3D1261" alt="Adel"></a>
+                        <h6>Adele</h6>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2 popular-artist-image">
+                        <a href="shawn.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BODQyNTczMDktODk5NS00N2U3LTlkNGItN2UwZWE5MzM5ZTkwXkEyXkFqcGdeQXVyMzQ2NDE1OTk@._V1_.jpg" alt="Shawn Mendes"></a>
+                        <h6>Shawn</h6>
+                    </div>
+                
+                </div>
+                <!-- End Of Row Section -->
+            </div>
+        </section>
+        <!-- End of Popular Artist Section -->
+
+        <!-- Starting Of Radio Section Created By Bootstrap Grid -->
+        <section class="radio-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-2 radio-icon">
+                        <a href="#"><img class="hvr-float-shadow" src="https://cdn1.vectorstock.com/i/1000x1000/49/55/radio-record-neon-sign-vector-22884955.jpg" alt="radio-image"></a>
+                    </div>
+                    <div class="col-sm-4 col-md-2 radio-section-image">
+                        <a href="#"><img class="hvr-float-shadow" src="https://a10.gaanacdn.com/gn_img/radiotheme/Rz4W87v3xD/Rz4W8R6KxD/size_m_1567170857.webp" alt="Rock Music"></a>
+                    </div>
+                    <div class="col-sm-4 col-md-2 radio-section-image">
+                        <a href="#"><img class="hvr-float-shadow" src="https://a10.gaanacdn.com/gn_img/radiotheme/0wrb4kNWLg/0wrb4AXKLg/size_m_1567583557.webp" alt="Love Songs"></a>
+                    </div>
+                    <div class="col-sm-4 col-md-2 radio-section-image">
+                        <a href="#"><img class="hvr-float-shadow" src="https://a10.gaanacdn.com/gn_img/radiotheme/qa4WEqqWP1/qa4WEm5WP1/size_m_1567171094.webp" alt="work-out"></a>
+                    </div>
+                    <div class="col-sm-4 col-md-2 radio-section-image">
+                        <a href="#"><img class="hvr-float-shadow" src="https://a10.gaanacdn.com/gn_img/radiotheme/DwPKOkBKqV/DwPKOR0bqV/size_m_1567171214.webp" alt="Hip-Hop"></a>
+                    </div>
+                    <div class="col-sm-4 col-md-2 radio-section-image">
+                        <a href="#"><img class="hvr-float-shadow" src="https://a10.gaanacdn.com/gn_img/radiotheme/81l3Mye3rM/81l3M2DWrM/size_m_1585726062.webp" alt="work-out"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Radio Section -->
+
+        <!-- Starting Of Song Gener Section Created Using Bootstrap Grid System -->
+        <section class="gener-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1 col-lg-4 col-md-4 gener-section-image">
+                        <a href=""><img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="party-image"></a>
+                        <div class="gener-section-text">
+                        <a href="#">Party</a>                
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-lg-4 col-md-4 gener-section-image">
+                        <a href=""><img src="https://images.unsplash.com/photo-1544785349-c4a5301826fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="electronic-music"></a>
+                        <div class="gener-section-text">
+                        <a href="#"> Electronic</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-lg-4 col-md-4 gener-section-image gener-section-last-img">
+                        <a href=""><img src="https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="road-trip-songs"></a>
+                        <div class="gener-section-text">
+                        <a href="#"> Road Trip</a>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Song Gener Section -->
+
+        <!-- Latest English Section -->
+        <section class="latest-english">
+            <div class="latest-release-title">
+                <h4>Latest English</h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt="Trust Nobody"></a>
+                        <h6>Trust Nobody</h6>
+                        <p>June 20,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/346/Stay-Gold-Japanese-2020-20200618090201-500x500.jpg" alt="Stay Gold"></a>
+                        <h6>Stay Gold</h6>
+                        <p>June 18,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt="Black Parade"></a>
+                        <h6>Black Parade</h6>
+                        <p>June 15,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/637/I-Can-t-Breathe-English-2020-20200618073321-500x500.jpg" alt="I Can't Breadth"></a>
+                        <h6>I Can't Breadth</h6>
+                        <p>June 12,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/264/Daisies-English-2020-20200514040146-500x500.jpg" alt="Daisies"></a>
+                        <h6>Daisies</h6>
+                        <p>June 9,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/235/RTJ4-English-2020-20200605204024-500x500.jpg" alt="Shawn Mendes"></a>
+                        <h6>RTJ4</h6>
+                        <p>June 3,2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Latest English Section -->
+
+        <!-- Latest Hindi Section -->
+        <section class="latest-english">
+            <div class="latest-release-title">
+                <h4>Latest Hindi</h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/040/Kahaani-2020-Hindi-2020-20200618165525-500x500.jpg" alt="Kahaani"></a>
+                        <h6>Kahaani</h6>
+                        <p>June 20,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/272/Yeh-Mann-Hindi-2020-20200617192754-500x500.jpg" alt="Yeh Mann"></a>
+                        <h6>Yeh Mann</h6>
+                        <p>June 18,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/111/Mai-Ni-Meriye-Hindi-2020-20200520224450-500x500.jpg" alt="Mai Ni Meriye"></a>
+                        <h6>Mai Ni Meriye</h6>
+                        <p>June 15,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/895/dooriyan-Hindi-2020-20200608231931-500x500.jpg" alt="Dooriyan"></a>
+                        <h6>Dooriyan</h6>
+                        <p>June 12,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/829/302-Hindi-2020-20200520081707-500x500.jpg" alt="302"></a>
+                        <h6>302</h6>
+                        <p>June 9,2020</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/835/Mummy-Hindi-2020-20200510035323-500x500.jpg" alt="Mummy"></a>
+                        <h6>Mummy</h6>
+                        <p>June 3,2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Latest Hindi Songs -->
+
+        <!-- Tranding Song Section -->
+        <section class="latest-english">
+            <div class="latest-release-title">
+                <h4>Trending Songs&nbsp;<i class="fas fa-chart-line"></i></h4>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/169/ASTROWORLD-English-2018-20190328195029-150x150.jpg" alt="Sicko Mode"></a>
+                        <h6>Travis Scott</h6>
+                        <p>Astroworld</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/830/Music-To-Be-Murdered-By-English-2020-20200117040807-150x150.jpg" alt="Godzila"></a>
+                        <h6>Eminem</h6>
+                        <p>Music To Be..</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/519/Feel-Me-English-2020-20200220231001-150x150.jpg" alt="Feel Me"></a>
+                        <h6>Selena Gomez</h6>
+                        <p>Feel Me</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/047/End-of-Time-English-2020-20200224043104-150x150.jpg" alt="End Of Time"></a>
+                        <h6>K-391, Alan..</h6>
+                        <p>End Of Time</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/304/Roses-Imanbek-Remix--English-2019-20200417111305-150x150.jpg" alt="Roses"></a>
+                        <h6>Saint Jhn</h6>
+                        <p>Roses(Imanbek..</p>
+                    </div>
+                    <div class="col-sm-6 col-md-2 latest-english-image">
+                        <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt="Binding Lights"></a>
+                        <h6>The Weekend</h6>
+                        <p>After Hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Trending Song Section -->
+
+    </main>
+    <!-- Ending Of Main Section -->
+
+    <!-- Begining Of Aside Section -->
+    <aside>
+
+        <!-- Header Section -->
+        <header class="aside-header-section" >
+            <h2 class="aside-head">Queue</h2>
+            <div class="dropdown aside-head">
+                <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Queue &nbsp;<i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Playlist</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Favorite Songs</a>
+                </div>
+            </div>
+        </header>
+        <!-- End Of Header Section -->
+
+        <!-- Song List System Created Using Css Flex -->
+        <section class="song-list">
+            <div class="song-list-container">
+                <div class="song-list-perticular">
+                    <p>01</p>
+                    <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                    <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p><i class="fas fa-play"></i></p>
+                    <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>03</p>
+                    <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>04</p>
+                    <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>05</p>
+                    <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>  
+                <div class="song-list-perticular">
+                    <p>06</p>
+                    <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                    <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>07</p>
+                    <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>08</p>
+                    <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>09</p>
+                    <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>10</p>
+                    <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>  
+                <div class="song-list-perticular">
+                    <p>11</p>
+                    <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                    <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>12</p>
+                    <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>13</p>
+                    <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>14</p>
+                    <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>15</p>
+                    <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>  
+                <div class="song-list-perticular">
+                    <p>16</p>
+                    <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                    <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>17</p>
+                    <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>18</p>
+                    <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>19</p>
+                    <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>
+                <div class="song-list-perticular">
+                    <p>20</p>
+                    <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                    <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                </div>  
+            </div>
+        </section>
+        Ending Of Song List
+    </aside>
+    <!-- Ending Of Aside Section -->
+
+    <!-- Starting Of Footer Music Controler Section using Flex -->
+    <footer id="footer"> 
+        <nav class="footer-navigation">
+            <img class="footer-nav-bar" src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt="">
+            <h4 class="footer-nav-bar">Trust Nobody<p>Dj Snake</p></h4>
+            <div class="footer-nav-bar footer-navigation-heart">
+                <i class="far fa-heart "></i>
+                <i class="fas fa-ban"></i>
+            </div>
+            <div class="footer-nav-bar footer-navigation-controls">
+                <i class="fas fa-random hvr-float-shadow space-maker"></i>
+                <i class="fas fa-fast-backward hvr-float-shadow space-maker"></i>
+                <i class="far fa-play-circle play-circle-footer hvr-float-shadow space-maker"></i>
+                <i class="fas fa-fast-forward hvr-float-shadow space-maker"></i>
+                <i class="fas fa-redo hvr-float-shadow space-maker"></i>
+            </div>
+                <div class="range-first footer-nav-bar">
+                    <input type="range" min="1" max="100" value="50">
+                </div>
+            
+            <div class="footer-nav-bar nav-bar-controls-end">
+                <i class="fas fa-list-ul space-maker"></i>
+                <i class="fas fa-mobile-alt space-maker"></i>
+                <i class="fas fa-volume-up space-maker"></i>
+                <input class="range-second" type="range" min="1" max="100" value="50">
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </nav>
+    </footer>
+    <!-- Ending Of Footer -->
+
+    <!-- Bootstarp Js/ Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- End Of Bootstrap Js/ Jquery CDN -->
+
+    <!-- font awesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    
+    <!-- Linking Script Js -->
+    <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</body>
+</html>

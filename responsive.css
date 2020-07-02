@@ -1,0 +1,148 @@
+/* For Tablet Device */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Universal Section */
+    html{
+        width: 100%;
+    }
+    /* Navigation section */
+        .fav-header{
+            position: relative;
+            right: 1.8rem;
+        }
+        #search-icon{
+            position: relative;
+            top: 25px;
+        }
+        #micro-icon{
+            position: relative;
+            left: 13.2rem;
+            bottom: 1.5rem;
+        }
+        .bell-icon{
+            position: relative;
+            right: 1rem;
+        }
+        .user-logo{
+            position: relative;
+            right: 3rem;
+        }
+    
+    /* Aside Section */
+        aside{
+            display: none;
+        }
+
+    /* Main Section */
+        main{
+            width: 90%;
+        }
+
+    /* Main Slider Section */
+        #main-slider{
+            position: relative;
+            top: 2.5rem;
+            margin: 2rem 0rem;
+        }
+    
+    /* Latest Release Section */
+        #latest-release{
+            width: 105%;
+            position: relative;
+            top: 2rem;
+        }
+
+    /* Popular Artist Section */
+        .popular-artist{
+            width: 100%;
+        }
+        .popular-artist-image a img{
+            width: 110px;
+            height: 110px;
+            border-radius: 55px;
+        }
+
+    /* Radio Section */
+        .radio-section{
+            width: 98%;
+        }
+        .radio-icon a img{
+            width: 105px;
+            height: 105px;
+            position: relative;
+            right: .7rem;  
+        }
+        .radio-section-image a img{
+            width: 105px;
+            height: 105px;
+            position: relative;
+            right: .5rem;
+            bottom: .2rem;
+        }
+    
+    /* Song Gener Section */
+        .gener-section{
+            margin-bottom: -10rem;
+        }
+        .gener-section-image{
+            position: relative;
+            margin-left: -2rem;
+        }
+        .gener-section-image img{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+        }
+        .gener-section-last-img{
+            position: relative;
+            left: 30rem;
+            bottom: 9.4rem;
+        }
+    
+    /* Latest English , Hindi & Trendinf Song Section */
+        .latest-english-image a img{
+            width: 100px;
+            height: 100px;
+        }
+    
+    /* Footer Section Of music player control */
+        #footer{
+            height: 11vh;
+        }
+        .footer-navigation-controls{
+            left: 30px;
+        }
+        .space-maker{
+            margin-left: 10px;
+        }
+        .nav-bar-controls-end{
+            bottom: 40px;
+            transform: translateX(90px);
+        }
+        .fa-mobile-alt{
+            display: none;
+        }
+        .range-first input{
+            width: 220% !important; 
+            position: relative;
+            top: 45px;
+            right: 200px;
+        }
+
+}
+
+
+
+/* For mobile Device */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    main,aside,header,footer{
+        display: none;
+    }
+    .mobile-img{
+        background-image: url(mobile-background.png);
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

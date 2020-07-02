@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn Mendes Playlist</title>
+    
+    <!-- Bootsrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- End Of Bootsrap Css Link -->
+
+    <!-- Linking Style Css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Css Hover Function -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header class="menu-header">
+
+        <!-- Header Section Using Bootstrap Nav -->
+        <nav class="navbar navbar-expand-md navbar-light navigation-menu" style="background-color: rgba(255, 255, 255, 0)">
+
+
+            <!-- Header Name & Logo Menu -->
+
+            <a class="navbar-brand logo-name" href="index.html"><img src="https://images-eu.ssl-images-amazon.com/images/I/51a1NKExrxL.png" width="100" height="100" alt="" loading="lazy">
+            Music Box
+            </a>         
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Header Name & Logo Section Ended -->
+            
+
+            <!-- Collapable Menu Options -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+
+            <!-- Left Side Menu -->
+
+                <ul class="navbar-nav mr-auto pl-5">
+                    <h6 class="nav-item active">
+                        <a class="nav-link" href="#">Favorites</a>
+                    </h6>
+                </ul>
+
+            <!-- End Of Left Side Menu -->
+            
+            <!-- Right Side Menu -->
+
+                <div class="my-lg-8">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <!-- Search Form -->
+
+                        <form class="form-inline">
+                            <i class="fas fa-search" id="search-icon"></i>
+                            <input class="pl-4 pr-4 search-bar" type="search" placeholder="Search"
+                              aria-label="Search">
+                            <i class="fas fa-microphone" id="micro-icon"></i>
+                        </form>
+
+                        <!-- Notification Icon -->
+                        <li class="nav-item bell-icon">
+                           
+                            <a class="nav-link pl-5" href="#"><i class="fas fa-bell"></i></a>
+                            <i class="fas fa-circle"></i>
+                        </li>
+
+                        <!-- User Logo -->
+                        <li class="nav-item user-logo">
+                            <a class="nav-link pl-5 pr-5" href="#"><img src="https://cdn.imgbin.com/8/12/22/imgbin-holstein-friesian-cattle-headphones-illustration-wearing-headphones-cute-cartoon-animals-material-dtA4KYNpSL7kMfhVYJyrakGuw.jpg" alt="User Icon"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            <!-- End Of Right Side Menu -->
+
+            </div>
+            <!-- End of Collapable Menu -->
+
+        </nav>
+        <!-- End Of Navigation Menu -->
+
+    </header>
+   <!-- End Of Header -->
+
+   <!-- Starting of Main Section -->
+   
+   <main>
+        <!-- Artist Bio Section -->
+        <section id="top-head">
+            <div class="container top-head-container">
+                <div class="row">
+                    <div class="col-lg-4 top-head-image">
+                        <img src="https://pyxis.nymag.com/v1/imgs/6d1/ebe/5c3147f944e95bc50f16bc352cf1f245d3-26-shawn-mendes.rsquare.w1200.jpg" alt="Shawn Mendes">
+                    </div>
+                    <div class=" col col-lg-8 top-head-content">
+                        <div>
+                            <h1>Shawn Mendes</h1>
+                        </div>
+                        <div class="coldplay-sub">
+                            <span>Canadian Singer</span><span class="coldpay-flo-count">15185 Followers</span> 
+                        </div>
+                        <div>
+                            <p>Shawn Mendes is a Canadian pop singer and songwriter. After uploading a series of his cover versions to various video-sharing sites (beginning with the now-defunct application Vine in 2012), Mendes earned a dedicated following that he cultivated through social media outlets. His talent, teen-idol good looks and built-in fan base quickly landed him a record deal. In 2014 his debut single, "Life of the Party,” charted at No. 24 on the Billboard 100.</p>
+                        </div>
+                        <button onclick="myFunction()" type="button" class="btn btn-dark coldplay-btn">Play All</button><span class="coldplay-fol"><a href="#">Follow</a></span>
+                        <div class="cold-play-sub-info">
+                            <p>76 Tracks | 35 Albums</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Artist Bio Section -->
+
+        <!-- Song List Section Using CSS FLEX -->
+        <section id="song-list">
+            
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>01</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>02</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>03</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>04</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>05</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>06</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>07</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>08</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+            <div class="song-list-table">
+                <div class="song-list-main-coldplay">
+                    <div class="song-list-single"><a href=""><p>09</p></a></div>
+                    <div class="song-list-single"><a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a></div>
+                    <div class="song-list-single"><a href=""> <h6>Trust Nobody<br><p>Dj Snake</p></h6></a></div>
+                    <div class="song-list-single"><a class="heart-img" href=""><i class="far fa-heart"></i></a></div>
+                    <div class="song-list-single"><a class="plus-img" href=""><i class="fas fa-plus"></i></a></div>
+                </div>
+            </div>
+        </section>
+        <!-- Ending Of Song List Section -->
+    </main>
+<!-- Ending Of Main Section -->
+
+
+<!-- Beginning Of Aside Section -->
+    <aside>
+
+        <!-- SImilar Artist Section -->
+        <div class="container">
+            <div>
+                <h4 class="similar-artist-sub similar-artist-sub-h4">Similar Artists</h4>
+                <a class="similar-artist-sub similar-artist-sub-a" href="#">View All</a>
+            </div>
+            <!-- First Row -->
+            <div class="row latest-release-row">
+                <div class="col-sm-12 col-md-6 latest-release-albums">
+                    <div>
+                        <a href="#" class="play-pause">
+                            <a href="#" title="Play video" class="play"></a>
+                        </a>
+                        <button onclick="myFunction()">
+                            <a href="#footer"><img class="latest-release-images similar-artist-img" src="https://snoidcdnems06.cdnsrv.jio.com/c.saavncdn.com/346/Stay-Gold-Japanese-2020-20200618090201-500x500.jpg" alt="Map of the soul"></a>
+                        </button>
+                    </div>
+
+                    <div>
+                        <h5 class="similar-artist-heading">Stay Gold <br><p class="secondary-tiitle">BTS</p></h5>
+                    </div>
+                    <!-- List Navigation  -->
+                    <div class="dropleft similar-artist-dropdown">
+                        <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h"></i>
+                            
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                        </div>
+                    </div>
+                    <!-- End Of List Navigation -->
+                </div>
+            </div>
+                <div class="row latest-release-row latest-release-row-second">
+                    <div class="col-sm-12 col-md-12 latest-release-albums">
+                        <div>
+                            <a href="#" class="play-pause">
+                                <a href="#" title="Play video" class="play"></a>
+                            </a>
+                            <button onclick="myFunction()">
+                                <a href="#footer"><img class="latest-release-images similar-artist-img" src="https://c.saavncdn.com/135/TRANSLATION-English-2020-20200622215528-500x500.jpg" alt="Map of the soul"></a>
+                            </button>
+                        </div>
+                        <div>
+                            <h5 class="similar-artist-heading">Translation <br><p class="secondary-tiitle"> Black Eyed Peas</p></h5>
+                        </div>
+                        <!-- List Navigation  -->
+                        <div class="dropleft similar-artist-dropdown">
+                            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-h"></i>
+                                
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                            </div>
+                        </div>
+                        <!-- End Of List Navigation -->
+                    </div>
+                </div>
+
+                    <div class="row latest-release-row latest-release-row-second">
+                        <div class="col-sm-12 col-md-12 latest-release-albums">
+                            <div>
+                                <a href="#" class="play-pause">
+                                    <a href="#" title="Play video" class="play"></a>
+                                </a>
+                                <button onclick="myFunction()">
+                                    <a href="#footer"><img class="latest-release-images similar-artist-img" src="https://c.saavncdn.com/095/Chromatica-English-2020-20200529000826-500x500.jpg" alt="Map of the soul"></a>
+                                </button>
+                            </div>
+                            <div>
+                                <h5 class="similar-artist-heading">Chromatica <br><p class="secondary-tiitle">Lady Gaga</p></h5>
+                            </div>
+                            <!-- List Navigation  -->
+                            <div class="dropleft similar-artist-dropdown">
+                                <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Play Now</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Add To Queue</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-list"></i>Add To Favorites</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-info-circle"></i>Get Info</a>
+                                </div>
+                            </div>
+                            <!-- End Of List Navigation -->
+                        </div>
+                    </div>
+                </div>
+            <!-- Ending Of Similar Artist Section -->
+        <!-- Second Header Aside Section -->
+        <header class="aside-header-section" >
+            <h2 class="aside-head">Queue</h2>
+            <div class="dropdown aside-head">
+                <a class="btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Queue &nbsp;<i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-play"></i>Playlist</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item hvr-sweep-to-right" href="#"><i class="fas fa-plus"></i>Favorite Songs</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Ending Of Heade Section -->
+
+        <!-- Song List Section -->
+        <section class="song-list">
+            <div class="song-list-container">
+            <div class="song-list-perticular">
+                <p>01</p>
+                <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p><i class="fas fa-play"></i></p>
+                <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>03</p>
+                <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>04</p>
+                <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>05</p>
+                <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>  
+            <div class="song-list-perticular">
+                <p>06</p>
+                <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>07</p>
+                <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>08</p>
+                <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>09</p>
+                <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>10</p>
+                <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>  
+            <div class="song-list-perticular">
+                <p>11</p>
+                <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>12</p>
+                <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>13</p>
+                <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>14</p>
+                <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>15</p>
+                <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>  
+            <div class="song-list-perticular">
+                <p>16</p>
+                <a href=""><img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-150x150.jpg" alt=""></a>
+                <a href=""> <h6>Rocksta.<br><p>Wee..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>17</p>
+                <a href=""><img src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Trust.<br><p>Dj Sna..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>18</p>
+                <a href=""><img src="https://c.saavncdn.com/538/Girlfriend-English-2020-20200625181259-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Girl Fri..<br><p>Charlie. </p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>19</p>
+                <a href=""><img src="https://c.saavncdn.com/022/Past-Life-English-2020-20200626000840-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Past Life<br><p>Travor..</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>
+            <div class="song-list-perticular">
+                <p>20</p>
+                <a href=""><img src="https://c.saavncdn.com/788/BLACK-PARADE-English-2020-20200620034233-500x500.jpg" alt=""></a>
+                <a href=""> <h6>Black P.<br><p>Beyonc.</p></h6></a>
+                <a href=""><i class="far fa-heart"></i></a>
+            </div>  
+            
+        </div>
+    </section>
+    <!-- Ending Of Songlist Section     -->
+</aside>
+<!-- Ending Of Aside Section -->
+
+<!-- Begining Of Footer & Music Player Control Section -->
+<footer id="footer"> 
+    <nav class="footer-navigation">
+        <img class="footer-nav-bar" src="https://c.saavncdn.com/687/Trust-Nobody-English-2020-20200624000211-500x500.jpg" alt="">
+        <h4 class="footer-nav-bar">Trust Nobody<p>Dj Snake</p></h4>
+        <div class="footer-nav-bar footer-navigation-heart">
+            <i class="far fa-heart "></i>
+            <i class="fas fa-ban"></i>
+        </div>
+        <div class="footer-nav-bar footer-navigation-controls">
+            <i class="fas fa-random hvr-float-shadow space-maker"></i>
+            <i class="fas fa-fast-backward hvr-float-shadow space-maker"></i>
+            <i class="far fa-play-circle play-circle-footer hvr-float-shadow space-maker"></i>
+            <i class="fas fa-fast-forward hvr-float-shadow space-maker"></i>
+            <i class="fas fa-redo hvr-float-shadow space-maker"></i>
+        </div>
+            <div class="range-first footer-nav-bar">
+                <input type="range" min="1" max="100" value="50">
+            </div>
+        
+        <div class="footer-nav-bar nav-bar-controls-end">
+            <i class="fas fa-list-ul space-maker"></i>
+            <i class="fas fa-mobile-alt space-maker"></i>
+            <i class="fas fa-volume-up space-maker"></i>
+            <input class="range-second" type="range" min="1" max="100" value="50">
+            <i class="fas fa-expand-alt"></i>
+        </div>
+    </nav>
+</footer>
+<!-- Ending Of Music Player Section -->
+
+
+   <!-- Bootstarp Js/ Jquery CDN -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <!-- End Of Bootstrap Js/ Jquery CDN -->
+
+   <!-- font awesome cdn -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+   
+   <!-- Linking Script Js -->
+   <script src="script.js"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</body>
+</html>
